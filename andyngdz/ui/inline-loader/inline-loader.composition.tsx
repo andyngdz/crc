@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { Container, Box } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import { InlineLoader } from "./inline-loader";
 
+const useStyles = makeStyles(
+  (theme) => ({
+    content: {
+      padding: theme.spacing(2),
+    },
+  }),
+  {
+    name: "BasicInlineLoader",
+  }
+);
+
 export const BasicInlineLoader = () => {
+  const classes = useStyles();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -10,10 +22,8 @@ export const BasicInlineLoader = () => {
   }, []);
 
   return (
-    <Container>
-      <Box pt={4}>
-        <InlineLoader loading={loading}>Hello, World!</InlineLoader>
-      </Box>
-    </Container>
+    <div className={classes.content}>
+      <InlineLoader loading={loading}>Hello, World!</InlineLoader>
+    </div>
   );
 };
