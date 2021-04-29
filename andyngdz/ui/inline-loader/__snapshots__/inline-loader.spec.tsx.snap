@@ -2,22 +2,18 @@
 
 exports[`inline-loader should render with the correct text 1`] = `
 <div
-  class="MuiContainer-root MuiContainer-maxWidthLg"
+  class="BasicInlineLoader-content-1"
 >
   <div
-    class="MuiBox-root MuiBox-root-1"
+    class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate"
+    role="progressbar"
   >
     <div
-      class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate"
-      role="progressbar"
-    >
-      <div
-        class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
-      />
-      <div
-        class="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
-      />
-    </div>
+      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+    />
+    <div
+      class="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+    />
   </div>
 </div>
 `;

@@ -1,21 +1,30 @@
 ---
-labels: ['react', 'typescript', 'inline-loader']
-description: 'A InlineLoader component.'
+labels: ["react", "typescript", "inline-loader"]
+description: "A InlineLoader component."
 ---
 
-import { InlineLoader } from './inline-loader';
+import { InlineLoader } from "./inline-loader";
 
 InlineLoader example:
 
 A simple InlineLoader component with some text
 
 Code Snippet:
+
 ```js
-<InlineLoader text="hello from InlineLoader" />
+<InlineLoader loading>Hello, World!</InlineLoader>
 ```
 
+```js
+<InlineLoader loading={false}>Hello, World!</InlineLoader>
+```
 
 Live Playground:
+
 ```js live
-<InlineLoader text="hello from InlineLoader" />
+<InlineLoader loading>Hello, World!</InlineLoader>
+```
+
+```js live
+<InlineLoader loading={false}>Hello, World!</InlineLoader>
 ```
