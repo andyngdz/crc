@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`inline-loader should render with the correct text 1`] = `
+exports[`InlineLoader Should render with the correct text 1`] = `
 <div
   class="BasicInlineLoader-content-1"
 >

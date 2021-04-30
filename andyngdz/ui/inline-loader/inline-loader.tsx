@@ -1,16 +1,18 @@
 import React from "react";
-import { LinearProgress } from "@material-ui/core";
+import { LinearProgress, LinearProgressProps } from "@material-ui/core";
 
-export type InlineLoaderProps = {
+export interface InlineLoaderProps extends LinearProgressProps {
   loading: boolean;
-};
+}
 
 export const InlineLoader: React.FC<InlineLoaderProps> = ({
   loading,
   children,
+  color = "secondary",
+  ...restProps
 }) => {
   if (loading) {
-    return <LinearProgress />;
+    return <LinearProgress color={color} {...restProps} />;
   }
 
   return <>{children}</>;
