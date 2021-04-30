@@ -23,7 +23,26 @@ export const BasicInlineLoader = () => {
 
   return (
     <div className={classes.content}>
-      <InlineLoader loading={loading}>Hello, World!</InlineLoader>
+      <InlineLoader loading={loading} color="primary">
+        Hello, World!
+      </InlineLoader>
+    </div>
+  );
+};
+
+export const BasicInlineLoaderWithColor = () => {
+  const classes = useStyles();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+
+  return (
+    <div className={classes.content}>
+      <InlineLoader loading={loading} color="secondary">
+        Hello, World!
+      </InlineLoader>
     </div>
   );
 };

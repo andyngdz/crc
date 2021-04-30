@@ -3,7 +3,7 @@
 {
     "ui/inline-loader": {
         "scope": "andyngdz.crc",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "andyngdz/ui/inline-loader"
     },
